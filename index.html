@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Temporizador tipo Pomodoro">
+
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+    <link rel="stylesheet" href="./style.css">
+
+    <script type="module" src="./js/main.js" defer></script>
+    <title>Focus Timer</title>
+</head>
+<body>
+    <main class="">
+        <div>
+            <button class="changeTheme sun"><img src="./assets/sun.svg" alt="Botão de sol para alterar pro modo claro"></button>
+            <button class="changeTheme moon hide"><img src="./assets/moon.svg" alt="Botão de lua para alterar pro modo escuro"></button>
+            <div class="time">
+                <span class="minutes">25</span>
+                <span class="dots">:</span>
+                <span class="seconds">00</span>
+            </div>
+            <div class="buttons">
+                <button class="ph-play-circle">
+                    <img src="./assets/play.svg" alt="Botão de play" data-action="toggleRunning">
+                </button>
+                <button class=" ph-pause-circle">
+                    <img src="./assets/pause.svg" alt="Botão de pausa" data-action="toggleRunning">
+                </button>
+                <button class="ph-timer">
+                    <img src="./assets/timer.svg" alt="Botão de definir o timer" data-action="set">
+                </button>
+                <button class=" ph-stop-circle">
+                    <img src="./assets/stop.svg" alt="Botão de resetar" data-action="reset">
+                </button>
+                <button class="ph-speaker-none">
+                    <img src="./assets/speaker.svg" alt="Botão de iniciar música" data-action="toggleMusic">
+                </button>
+                <button class=" ph-speaker-high">
+                    <img src="./assets/speaker-high.svg" alt="Botão de parar música" data-action="toggleMusic">
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

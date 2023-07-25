@@ -1,0 +1,78 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #121214;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.changeTheme {
+    position: absolute;
+    right: 3.2rem;
+    top: 3.2rem;
+}
+
+span {
+    color: #F8F8FC;
+    font-size: 9.6rem;
+    font-weight: 700;
+}
+
+.buttons {
+    align-items: center;
+    background: #242424;
+    border-radius: 9999px;
+    display: flex;
+    gap: 1.6rem;
+    justify-content: center;
+    margin-top: 1.6rem;
+    padding: 2.2rem 4rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+button:hover {
+    scale: 1.2;
+}
+
+.hide {
+    display: none;
+}
+
+.light-bg {
+    background-color: #F8F8FC;
+}
+
+.light-span {
+    color: #121214;
+}
+
+/* controls */
+.running .ph-play-circle,
+.running .ph-timer,
+.music-on .ph-speaker-none,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle,
+html:not(.music-on) .ph-speaker-high {
+    display: none;
+}
