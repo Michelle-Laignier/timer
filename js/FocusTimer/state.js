@@ -1,6 +1,7 @@
-export default {
+const state = {
     minutes: 25,
     seconds: 0,
     isRunning: false,
-    isMute: true
+    isMute: true,
 }
+export default state;

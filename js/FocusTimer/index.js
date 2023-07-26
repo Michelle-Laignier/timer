@@ -1,4 +1,4 @@
-import state from "../FocusTimer/state.js";
+import state from "./state.js";
 import * as events from "./events.js";
 import * as timer from "./timer.js"
 
@@ -7,4 +7,5 @@ export function start (minutes, seconds) {
     state.seconds = seconds
     timer.updateDisplay()
     events.registerControls()
+    events.setMinutes()
 }
